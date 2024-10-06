@@ -1,0 +1,166 @@
+/* Question 0. Import a font and make all text in the body using that font. Check the homework instructions for more information!*/
+/* Set all text in the body to be a certain color (whatever color you choose!)*/
+/* Center all text in the body. Check out the homework spec for help.*/
+
+body {
+    margin: 50px auto;
+    max-width: 1200px;
+    /* YOUR CODE HERE */
+    color: #3f5705;
+    text-align: center;
+}
+
+
+
+/* Question 1: Add a border, border radius, box shadow, or whatever other styling you'd like to your image! */
+img {
+    width: 175px;
+    /* YOUR CODE HERE */
+    border: 2px solid #112e50;
+    border-radius: 20px;
+    box-shadow: 4px 5px 10px #888888;
+    padding: 5px;
+}
+
+h1 {
+    font-size: 45px;
+    transition: ease-in-out 0.5s;
+}
+
+/* Question 2. Select the h1 tag and add a hover effect! You can change the background-color, color, opacity, or anything you want.*/
+
+/* YOUR CODE HERE */
+h1:hover {
+    background-color: #f0f0f0;
+    color: #d84ae2;
+}
+
+
+
+
+/* Question 3. Add different background colors for all the different sections (Education, Experience, etc.) by selecting them via ids. */
+
+/* YOUR CODE HERE */
+#edu {
+    background-color: rgb(118, 203, 218);
+}
+
+#exp {
+    background-color: aquamarine;
+}
+
+#proj {
+    background-color: rgb(225, 121, 121);
+}
+
+#cont {
+    background-color: rgb(227, 149, 121);
+}
+
+/* Question 4. Add margin, padding, and borders to the section-wrapper class! */
+
+.section-wrapper {
+    background-color: #a5d2ee;
+    /*YOUR CODE HERE*/
+    margin: 20px;
+    padding: 15px;
+    border: 3px solid #c6e367;
+    border-radius: 30px;
+}
+
+
+/* Experience Section */
+
+/* Question 5a. Use CSS Flexbox to display your experiences as shown in the diagram.
+ Hint: Check the homework spec for some help!*/
+
+.experience-wrapper {
+    display: flex; /* YOUR CODE HERE */
+    gap: 0; /*YOUR CODE HERE*/
+    justify-content: space-evenly; /*YOUR CODE HERE*/
+}
+
+/* Question 5b. Add a background color to the experience-list-item class.*/
+
+.experience-list-item {
+    border: 4px solid #1d3557;
+    text-align: left;
+    width: 250px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    /*YOUR CODE HERE*/
+    background-color: #b3d3d7;
+    /* Side note: the transition attribute makes effects look smoother! 
+    This means the hover effect will slowly kick in for 0.2s. */
+    transition: ease-in-out 0.2s;
+}
+
+
+
+/* Question 5c. Let's take a break! Add a hover effect to each experience-list-item div. 
+Experiment with border, border-radius, background-color, or whatever you want!*/
+
+.experience-list-item:hover {
+    /* YOUR CODE HERE */
+    background-color: #b2ebf2;
+    border: 2px solid #4A90E2;
+    border-radius: 10px;
+    transform: scale(1.1);
+}
+
+
+
+/* Projects Section */
+
+/* Question 6. Use CSS Flexbox and hover effects for the Projects Section, just as you did for the Experience Section! */
+
+/*YOUR CODE HERE*/
+.project-wrapper {
+    display: flex; /* YOUR CODE HERE */
+    gap: 0; /*YOUR CODE HERE*/
+    justify-content: space-evenly; /*YOUR CODE HERE*/
+}
+
+.project-list-item {
+    border: 4px solid #3b6aac;
+    text-align: left;
+    width: 250px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    /*YOUR CODE HERE*/
+    background-color: #debd99;
+    /* Side note: the transition attribute makes effects look smoother! 
+    This means the hover effect will slowly kick in for 0.2s. */
+    transition: ease-in-out 0.2s;
+}
+
+.project-list-item:hover {
+    /* YOUR CODE HERE */
+    background-color: #e8b2f2;
+    border: 2px solid #4ac4e2;
+    border-radius: 10px;
+    transform: scale(1.1);
+}
+
+
+
+/* Contact Section */
+
+/* Question 7. Make your link look something like the one shown in the homework spec!*/
+
+a {
+    /*YOUR CODE HERE*/
+    background-color: #2d3aa1;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background-color: #1a237e;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.4);
+}
